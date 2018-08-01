@@ -1,6 +1,8 @@
 ---
 logstash_listen_port_beats: 5044
 
+logstash_version: 6.x
+
 logstash_elasticsearch_hosts:
   - http://localhost:9200
 
