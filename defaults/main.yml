@@ -1,6 +1,8 @@
 ---
 logstash_listen_port_beats: 5044
 
+logstash_extract_path: '/usr/share/logstash'
+
 logstash_version: 6.x
 
 logstash_elasticsearch_hosts:
