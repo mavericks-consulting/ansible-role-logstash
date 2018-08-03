@@ -1,0 +1,51 @@
+## JVM configuration
+
+# Xms represents the initial size of total heap space
+# Xmx represents the maximum size of total heap space
+
+-Xms512m
+-Xmx512m
+
+################################################################
+## Expert settings
+################################################################
+##
+## All settings below this section are considered
+## expert settings. Don't tamper with them unless
+## you understand what you are doing
+##
+################################################################
+
+## GC configuration
+-XX:+UseParNewGC
+-XX:+UseConcMarkSweepGC
+-XX:CMSInitiatingOccupancyFraction=75
+-XX:+UseCMSInitiatingOccupancyOnly
+
+## Locale
+# Set the locale language
+#-Duser.language=en
+
+# Set the locale country
+#-Duser.country=US
+
+# Set the locale variant, if any
+#-Duser.variant=
+
+## basic
+
+# set the I/O temp directory
+#-Djava.io.tmpdir=$HOME
+
+# set to headless, just in case
+-Djava.awt.headless=true
+
+# ensure UTF-8 encoding by default (e.g. filenames)
+-Dfile.encoding=UTF-8
+
+# use our provided JNA always versus the system one
+#-Djna.nosys=true
+
+# Turn on JRuby invokedynamic
+-Djruby.compile.invokedynamic=true
+# Force Compilation
