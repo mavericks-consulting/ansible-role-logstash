@@ -19,3 +19,6 @@ logstash_enabled_on_boot: yes
 
 logstash_install_plugins:
   - logstash-input-beats
+
+min_heap_size: 512m
+max_heap_size: 512m
